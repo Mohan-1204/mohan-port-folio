@@ -1,4 +1,4 @@
-const profileImg = "https://i.postimg.cc/bJBwC60L/1000265977-jpg.jpg";
+import profileImg from "@/assets/profile.jpg";
 import { FileDown, Mail } from "lucide-react";
 
 const HeroSection = () => {
