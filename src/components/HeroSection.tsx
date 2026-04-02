@@ -1,4 +1,4 @@
-import profileImg from "@/assets/profile.jpg";
+
 import { FileDown, Mail } from "lucide-react";
 
 const HeroSection = () => {
@@ -37,7 +37,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden gradient-border glow">
                 <img
-                  src={profileImg}
+                  src="https://i.postimg.cc/65kJHkkr/Picsart-26-03-30-18-05-30-792-jpg.jpg"
                   alt="Mohan - Full Stack Developer"
                   width={288}
                   height={288}
