@@ -1,4 +1,4 @@
-import profileImg from "@/assets/profile.jpg";
+
 import { FileDown, Mail } from "lucide-react";
 
 const HeroSection = () => {
