@@ -20,7 +20,8 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <a
-                href="#"
+                href="/Mohan_Resume.pdf"
+                download="Mohan_Resume.pdf"
                 className="gradient-bg text-primary-foreground px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:opacity-90 transition-opacity glow"
               >
                 <FileDown size={18} /> View Resume
