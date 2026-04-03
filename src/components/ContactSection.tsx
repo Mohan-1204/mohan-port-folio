@@ -1,15 +1,33 @@
 import { useState } from "react";
-import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "service_py7ne16";
+const TEMPLATE_ID = "template_xm4s8ge";
+const PUBLIC_KEY = "qIp6lf5v8Qoo363b4";
 
 const ContactSection = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Message sent!", description: "Thank you for reaching out. I'll get back to you soon." });
-    setForm({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+      }, PUBLIC_KEY);
+      toast({ title: "Message sent!", description: "Thank you for reaching out. I'll get back to you soon." });
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast({ title: "Failed to send", description: "Something went wrong. Please try again.", variant: "destructive" });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -76,9 +94,10 @@ const ContactSection = () => {
             />
             <button
               type="submit"
-              className="w-full gradient-bg text-primary-foreground py-3 rounded-lg font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
+              disabled={sending}
+              className="w-full gradient-bg text-primary-foreground py-3 rounded-lg font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-opacity disabled:opacity-60"
             >
-              <Send size={16} /> Send Message
+              {sending ? <><Loader2 size={16} className="animate-spin" /> Sending...</> : <><Send size={16} /> Send Message</>}
             </button>
           </form>
         </div>
