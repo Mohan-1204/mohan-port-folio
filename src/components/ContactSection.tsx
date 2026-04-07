@@ -59,7 +59,7 @@ const ContactSection = () => {
               <a href="https://www.linkedin.com/in/mohan-p-8861953a1" target="_blank" rel="noopener noreferrer" className="glass rounded-xl p-4 hover:glow transition-all" aria-label="LinkedIn">
                 <Linkedin size={20} className="text-primary" />
               </a>
-              <a href="#" className="glass rounded-xl p-4 hover:glow transition-all" aria-label="GitHub">
+              <a href="https://github.com/Mohan-1204" target="_blank" rel="noopener noreferrer" className="glass rounded-xl p-4 hover:glow transition-all" aria-label="GitHub">
                 <Github size={20} className="text-primary" />
               </a>
             </div>
