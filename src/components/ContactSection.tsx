@@ -56,11 +56,11 @@ const ContactSection = () => {
               </div>
             </div>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/in/mohan-p-8861953a1" target="_blank" rel="noopener noreferrer" className="glass rounded-xl p-4 hover:glow transition-all" aria-label="LinkedIn">
-                <Linkedin size={20} className="text-primary" />
+              <a href="https://www.linkedin.com/in/mohan-p-8861953a1/" target="_blank" rel="noopener noreferrer" className="glass rounded-xl p-4 hover:glow transition-all cursor-pointer inline-flex items-center justify-center" aria-label="LinkedIn">
+                <Linkedin size={20} className="text-primary pointer-events-none" />
               </a>
-              <a href="https://github.com/Mohan-1204" target="_blank" rel="noopener noreferrer" className="glass rounded-xl p-4 hover:glow transition-all" aria-label="GitHub">
-                <Github size={20} className="text-primary" />
+              <a href="https://github.com/Mohan-1204" target="_blank" rel="noopener noreferrer" className="glass rounded-xl p-4 hover:glow transition-all cursor-pointer inline-flex items-center justify-center" aria-label="GitHub">
+                <Github size={20} className="text-primary pointer-events-none" />
               </a>
             </div>
           </div>
