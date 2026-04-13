@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <a href="#home" className="text-xl font-bold gradient-text">
-          Mohan.
+          Mohan
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (

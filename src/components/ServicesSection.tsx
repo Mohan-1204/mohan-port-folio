@@ -1,20 +1,21 @@
 import { Globe, Palette, Bug } from "lucide-react";
 
 const services = [
-  {
-    icon: Globe,
-    title: "Web Development",
-    desc: "Building responsive and dynamic websites using modern technologies like React, JavaScript, and Python.",
-  },
-  {
+   {
     icon: Palette,
     title: "UI/UX Design",
     desc: "Designing user-friendly and visually appealing interfaces with a focus on usability and aesthetics.",
   },
   {
+    icon: Globe,
+    title: "Web Development",
+    desc: "Building responsive and dynamic websites using modern technologies like React, JavaScript, and Python.",
+  },
+ 
+  {
     icon: Bug,
     title: "Software Testing",
-    desc: "Manual testing and ensuring application quality, performance, and reliability.",
+    desc: "Automation & Manual testing and ensuring application quality, performance, and reliability.",
   },
 ];
 

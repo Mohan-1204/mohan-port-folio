@@ -3,17 +3,25 @@ const skills = [
     { name: "HTML", level: 85 },
     { name: "CSS", level: 80 },
     { name: "JavaScript", level: 70 },
-    { name: "React", level: 60 },
+    { name: "React", level: 70 },
   ]},
-  { category: "Backend", items: [
-    { name: "Python", level: 65 },
-  ]},
-  { category: "Database", items: [
-    { name: "SQL", level: 70 },
-  ]},
+{
+  category: "Backend & Database", items: [
+    { name: "Python", level: 75 },
+    { name: "SQL", level: 80 },
+  ]
+},
+  // { category: "Database", items: [
+  //   { name: "SQL", level: 80 },
+  // ]},
   { category: "Other", items: [
     { name: "UI/UX Design", level: 60 },
-    { name: "Software Testing", level: 65 },
+    { name: "Software Testing", level: 75 },
+  ]
+  },
+  { category: "Tools", items: [
+    { name: "Git", level: 70 },
+    // { name: "", level: 75 },
   ]},
 ];
 
@@ -27,7 +35,7 @@ const SkillsSection = () => {
         <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
           Technologies and tools I work with.
         </p>
-        <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
           {skills.map((group) => (
             <div key={group.category} className="glass rounded-xl p-6">
               <h3 className="text-lg font-semibold mb-5 gradient-text">{group.category}</h3>

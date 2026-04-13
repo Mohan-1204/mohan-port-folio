@@ -12,7 +12,7 @@ const HeroSection = () => {
               <span className="gradient-text">Mohan</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-medium mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Aspiring Full Stack Developer & Software Tester
+              Aspiring Full Stack Developer & Software Tester & UI/UX Designer
             </h2>
             <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.3s" }}>
               Currently pursuing B.Tech in Information Technology, undergoing training in Full Stack Development 
@@ -20,8 +20,8 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <a
-                href="/Mohan_Resume.pdf"
-                download="Mohan_Resume.pdf"
+                href="/MOHAN.pdf"
+                download="MOHAN.pdf"
                 className="gradient-bg text-primary-foreground px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:opacity-90 transition-opacity glow"
               >
                 <FileDown size={18} /> View Resume
@@ -37,12 +37,12 @@ const HeroSection = () => {
           <div className="flex-shrink-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
               <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden gradient-border glow">
-                <img
-                  src="https://i.postimg.cc/65kJHkkr/Picsart-26-03-30-18-05-30-792-jpg.jpg"
+                <img 
+                  src="https://i.postimg.cc/FzRjB6Gb/file-00000000c11c7208ac1756b3620d47a6.png"
                   alt="Mohan - Full Stack Developer"
                   width={288}
                   height={288}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top "
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full gradient-bg animate-float" />
