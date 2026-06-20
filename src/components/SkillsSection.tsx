@@ -1,26 +1,31 @@
 const skills = [
-  { category: "Frontend", items: [
+  { category: "Developing", items: [
     { name: "HTML", level: 85 },
     { name: "CSS", level: 80 },
-    { name: "JavaScript", level: 70 },
-    { name: "React", level: 70 },
+    { name: "JavaScript", level: 80 },
+    { name: "React", level: 75 },
+    { name: "Python", level: 80 },
+    { name: "SQL", level: 80 },
   ]},
 {
-  category: "Backend & Database", items: [
-    { name: "Python", level: 75 },
-    { name: "SQL", level: 80 },
+  category: "Testing", items: [
+    { name: "Manual Testing", level: 80 },
+    { name: "Automation Testing", level: 80 },
+    { name: "Selenium", level: 80 },
+    { name: "TestNG", level: 80 },
+    { name: "Cucumber", level: 80 },
   ]
 },
   // { category: "Database", items: [
   //   { name: "SQL", level: 80 },
   // ]},
-  { category: "Other", items: [
-    { name: "UI/UX Design", level: 60 },
-    { name: "Software Testing", level: 75 },
-  ]
-  },
+  // { category: "Other", items: [
+  //   { name: "UI/UX Design", level: 60 },
+  //   { name: "Software Testing", level: 75 },
+  // ]
+  // },
   { category: "Tools", items: [
-    { name: "Git", level: 70 },
+    { name: "Git Hub", level: 85 },
     // { name: "", level: 75 },
   ]},
 ];
@@ -29,13 +34,13 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-4xl font-bold text-center mb-3">
           My <span className="gradient-text">Skills</span>
         </h2>
         <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
           Technologies and tools I work with.
         </p>
-        <div className="grid sm:grid-cols-4 gap-10 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {skills.map((group) => (
             <div key={group.category} className="glass rounded-xl p-6">
               <h3 className="text-lg font-semibold mb-5 gradient-text">{group.category}</h3>

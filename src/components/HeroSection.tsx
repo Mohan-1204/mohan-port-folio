@@ -12,7 +12,7 @@ const HeroSection = () => {
               <span className="gradient-text">Mohan</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-medium mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Aspiring Full Stack Developer & Software Tester & UI/UX Designer
+              Aspiring Full Stack Developer & Software Tester
             </h2>
             <p className="text-muted-foreground max-w-lg mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.3s" }}>
               Currently pursuing B.Tech in Information Technology, undergoing training in Full Stack Development 

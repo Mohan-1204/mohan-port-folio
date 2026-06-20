@@ -1,17 +1,17 @@
 import { Globe, Palette, Bug } from "lucide-react";
 
 const services = [
-   {
-    icon: Palette,
-    title: "UI/UX Design",
-    desc: "Designing user-friendly and visually appealing interfaces with a focus on usability and aesthetics.",
-  },
+  //  {
+  //   icon: Palette,
+  //   title: "UI/UX Design",
+  //   desc: "Designing user-friendly and visually appealing interfaces with a focus on usability and aesthetics.",
+  // },
   {
     icon: Globe,
     title: "Web Development",
     desc: "Building responsive and dynamic websites using modern technologies like React, JavaScript, and Python.",
   },
- 
+
   {
     icon: Bug,
     title: "Software Testing",
@@ -29,7 +29,7 @@ const ServicesSection = () => {
         <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
           What I can do for you.
         </p>
-        <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-9 max-w-2xl mx-auto">
           {services.map((s) => (
             <div
               key={s.title}
